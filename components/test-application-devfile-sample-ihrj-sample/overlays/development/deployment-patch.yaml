@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-application-devfile-sample-ihrj-sample
+  namespace: rorai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:00de05552e0c9b786547f7eb48b51b9a0910ea27d5ff2c8a13c4666b0fe6b014
+        name: container-image
+        resources: {}
+status: {}
