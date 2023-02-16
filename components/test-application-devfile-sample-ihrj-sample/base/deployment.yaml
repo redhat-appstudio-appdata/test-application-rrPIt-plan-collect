@@ -40,7 +40,10 @@ spec:
           tcpSocket:
             port: 3001
         resources:
+          limits:
+            cpu: "1"
+            memory: 512Mi
           requests:
-            cpu: 10m
+            cpu: 9m
             memory: 50Mi
 status: {}
